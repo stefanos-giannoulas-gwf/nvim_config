@@ -47,3 +47,6 @@ end, { desc = "Toggle UI" })
 vim.keymap.set("n", "Q", "<nop>")
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open File Explorer" })
+vim.keymap.set("n", "<leader>co", function()
+  vim.cmd.CopilotChatOpen()
+end, { desc = "Opens the git hub copilot chat" })
